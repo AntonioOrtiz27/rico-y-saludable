@@ -7,7 +7,7 @@ import * as cart from '../state/cart.js';
 
 export async function renderCatalog(root) {
   root.innerHTML = `
-  <header class="top"><img src="/logo.png" alt="Logo ${BUSINESS.name}" class="logo" />
+  <header class="top"><img src="${import.meta.env.BASE_URL}logo.png" alt="Logo ${BUSINESS.name}" class="logo" />
     <div><h1>${BUSINESS.name}</h1><p>${BUSINESS.tagline} · ${BUSINESS.slogan}</p></div></header>
   <div class="bar"><input id="q" type="search" placeholder="Buscar producto…" aria-label="Buscar producto" />
     <nav id="cats" aria-label="Categorías"></nav></div>
